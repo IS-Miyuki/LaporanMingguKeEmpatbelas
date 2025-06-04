@@ -1,7 +1,7 @@
-def test(n:str):
+def jumlah(n:str):
     if len(n) == 0:
         return 0
     else:
-        return test(n[:-1]) + int(n[-1]) 
+        return jumlah(n[:-1]) + int(n[-1]) 
 
-print(test("54321"))
+print(jumlah("54321"))
